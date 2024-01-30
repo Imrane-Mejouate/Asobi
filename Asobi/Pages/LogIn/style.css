@@ -352,7 +352,7 @@
   font-family: 'Lato',sans-serif;
   color: #fff;
   text-align: center;
-  background: var(--gradient-1);
+  background: var(--bg-purple);
   border: 1px solid #fff;
   box-shadow: 0 0 8px hsla(267, 100%, 68%, 0.5), inset -5px 5px 5px hsla(0, 0%, 100%, 0.3),inset 5px -5px 5px hsla(0, 0%, 0%, 0.3);;
   transition: 200ms;
