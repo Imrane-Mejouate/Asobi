@@ -433,7 +433,7 @@ article{
   background-color: hsla(246, 53%, 11%, 0.7);
   gap: 20px;
   display: grid;
-  grid-template-rows: 65px 600px repeat(3,auto);
+  grid-template-rows: 65px 600px repeat(4,auto);
 }
 
 .srch-check{display: none;}
@@ -501,7 +501,7 @@ article{
 
 .slider{
   display: flex;
-  aspect-ratio: 9/13.8;
+  aspect-ratio: 9/13.79;
   height: 100%;
   overflow-x: auto;
   overflow-y: hidden;
@@ -514,7 +514,7 @@ article{
 .slider img{
   place-items: center;
   height: 100%;
-  aspect-ratio: 9/13.8;
+  aspect-ratio: 9/13.78;
   flex: 1 0 100%;
   scroll-snap-align: center;
 }
@@ -535,8 +535,8 @@ article{
 }
 
 .slider-nav a{
-  width: 0.75rem;
-  height: 0.75rem;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   background-color: #fff;
   opacity: 0.75;
@@ -556,7 +556,7 @@ article{
 
 .games-grid {
   display: grid;
-  grid-template-columns: repeat(1,1fr);
+  grid-template-columns: repeat(2,1fr);
   grid-gap: 20px;
 }
 
@@ -598,25 +598,20 @@ article{
 
 
 
-
-
-
-
-
-
 /*-----------------------------------*\
   #MEDIA SCROLLER
 \*-----------------------------------*/
 
+.scroll-games-container{overflow: hidden;width: 100%;height: 70%;}
+
+
 .scroll-games {
   font-size: 1.25rem;
   color: white;
-  background-color: #100d2a;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid #100d2a;
-  height: 150px;
   display: none;
   overflow: hidden;
 }
@@ -655,8 +650,8 @@ article{
   overflow: hidden;
 }
 
-.media-element > img {
-  width: 100%;
+.media-element img {
+  width: 100%; 
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }
@@ -669,20 +664,19 @@ article{
   position: absolute;
   width: 3rem;
   padding: 1rem;
-  background: rgb(0 0 0 / 0);
-  opacity: 0;
+  background: rgb(0 0 0 / 0.3);
 }
 
 .previous {
   left: 0;
-  top: 0;
-  bottom: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .next {
   right: 0;
-  top: 0;
-  bottom: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .media-group:first-child :where(.next, .previous) {
@@ -694,7 +688,7 @@ article{
 }
 
 :where(.next, .previous):hover {
-  background: rgb(0 0 0 / 0.3);
+  background: rgb(0 0 0 / 0.7);
 }
 
 :where(.next, .previous) > svg {
@@ -760,10 +754,36 @@ article{
   opacity: 1;
 }
 
-.media-element{transition: 400ms;}
+.img-content h4{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: var(--weight-bold);
+  color: #fff;
+  letter-spacing: 0.1rem;
+  transform: translateY(50%);
+  opacity: 0;
+  transition: 400ms;
+}
 
-.media-element:hover{scale: 1.1;}
+.media-element{position: relative;}
 
+.media-element .img-content{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 1.1rem;
+  text-align: center;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.media-element :is(img,.img-content){transition: 400ms;}
+
+.media-element:hover img{filter: brightness(0.5);}
+
+.media-element:hover .img-content h4{transform: translateY(20%);opacity: 1;}
 
 .scroll-games *{overflow: hidden;}
 
@@ -974,7 +994,7 @@ article{
 
 
   .games-grid {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
   }
 
   /**
@@ -1039,6 +1059,10 @@ article{
   }
 
   .wrapper span{scale: 0.8;}
+
+  .scroll-games{display: block;}
+
+  .games-grid{grid-template-columns: repeat(4,1fr);}
 
 
 }
@@ -1124,10 +1148,9 @@ article{
 
   .wrapper span{scale: 1;}
 
-  .scroll-games{display: block;}
 
 
-  .games-grid{grid-template-columns: repeat(3,1fr);}
+  .games-grid{grid-template-columns: repeat(6,1fr);}
 
 
   /**
@@ -1169,7 +1192,7 @@ article{
   }
 
 
-  .games-grid{grid-template-columns: repeat(4,1fr);}
+  .games-grid{grid-template-columns: repeat(8,1fr);}
 
   /**
    * FOOTER
@@ -1179,3 +1202,4 @@ article{
 
   .footer .logo img { width: 205px; }
 }
+
