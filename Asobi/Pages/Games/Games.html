@@ -1,1205 +1,482 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
-:root {
-
-    /**
-     * COLORS
-     */
-  
-    /* background color */
-    --bg-purple: hsla(267, 100%, 63%, 1);
-    --bg-purple-alpha-10: hsla(267, 100%, 63%, 0.1);
-    --bg-purple-alpha-30: hsla(267, 100%, 63%, 0.3);
-    --bg-dark-purple: hsla(279, 42%, 9%, 1);
-    --bg-oxford-blue: hsl(240, 64%, 13%);
-    --bg-oxford-blue-alpha-95: hsla(240, 63%, 13%, 0.95);
-    --bg-oxford-blue-alpha-90: hsla(240, 63%, 13%, 0.9);
-    --bg-oxford-blue-alpha-80: hsla(240, 63%, 13%, 0.8);
-  
-    /* gradient color */
-    --gradient-1: linear-gradient(to right bottom, hsl(299, 100%, 52%), hsl(291, 100%, 58%), hsl(283, 100%, 60%), hsl(273, 100%, 62%), hsl(262, 100%, 63%), hsl(242, 100%, 69%), hsl(223, 100%, 62%), hsl(210, 100%, 50%), hsl(203, 100%, 50%), hsl(198, 100%, 50%), hsl(192, 100%, 48%), hsl(185, 90%, 48%));
-    --gradient-2: linear-gradient(90deg, transparent 0%, #9841ff 50%, transparent 100%);
-  
-    /* text color */
-    --text-white: hsla(0, 0%, 100%, 1);
-    --text-gainsboro: hsla(0, 0%, 87%, 1);
-    --text-champagne-pink: hsla(23, 61%, 86%, 1);
-    --text-purple: hsla(267, 100%, 63%, 1);
-  
-    /* border color */
-    --border-space-cadet: hsl(240, 45%, 17%);
-    --border-purple-alpha-30: hsla(267, 100%, 63%, 0.3); 
-  
-    /**
-     * TYPOGRAPHY
-     */
-  
-    /* font family */
-    --fontFamily-oxanium: 'Oxanium', cursive;
-    --fontFamily-work-sans: 'Work Sans', sans-serif;
-  
-    /* font size */
-    --fontSize-1: 3.6rem;
-    --fontSize-2: 2.4rem;
-    --fontSize-3: 2rem;
-    --fontSize-4: 1.7rem;
-    --fontSize-5: 1.6rem;
-    --fontSize-6: 1.5rem;
-    --fontSize-7: 1.4rem;
-    --fontSize-8: 1.2rem;
-  
-    /* font weight */
-    --weight-regular: 400;
-    --weight-semiBold: 600;
-    --weight-bold: 700;
-  
-    /**
-     * SPACING
-     */
-  
-    --section-spacing: 60px;
-  
-    /**
-     * BOX SHADOW
-     */
-  
-    --shadow: 0px 2px 5px 0px hsla(0, 0%, 0%, 0.2);
-
-    /**
-     * EMO NEON SHADOW COLOR
-     */
-
-    --emo-shadow: hsl(214, 100%, 50%);
-    --emo-shadow-broken: hsla(214, 100%, 50%, 0.4);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- 
+      - primary meta tags
+    -->
+
+    <title>Asobi - For True Gamers!</title>
+    <meta name="title" content="Asobi - For True Gamers!">
+    <meta name="description" content="This is a video games website made by Imrane Mejouate">
+    <!-- 
+      - google font link
+    -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&display=swap" rel="stylesheet">
   
-    /**
-     * BORDER RADIUS
-     */
-  
-    --radius-circle: 50%;
-    --radius-5: 5px;
-    --radius-3: 3px;
-  
-    /**
-     * CLIP PATH
-     */
-  
-    --clip-path-1: polygon(0 0, 100% 0, 100% 0, 0 0);
-    --clip-path-2: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    --clip-path-3: polygon(0% 0%, 90% 0, 100% 30%, 100% 100%, 0 100%);
-    --clip-path-4: polygon(90% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
-    --clip-path-5: polygon(100% 0, 100% 100%, 10% 100%, 0 60%, 0 0);
-    --clip-path-6: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
-    --clip-path-7: polygon(100% 0, 100% 60%, 90% 100%, 0 100%, 0 0);
-    --clip-path-8: polygon(0% 0%, 70% 0, 100% 30%, 100% 100%, 0 100%);
-    --clip-path-9: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
-  
-    /**
-     * TRANSITION
-     */
-  
-    --transition-1: 250ms ease;
-    --transition-2: 500ms ease;
-    --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
-  
-  }
+    <!-- 
+      - Icons
+     -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
+    <!-- 
+      - custom css link
+    -->
+    <link rel="stylesheet" href="style.css">
 
+    <!-- <meta http-equiv="refresh" content="5"> -->
+</head>
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-*::selection{background-color: var(--bg-purple);}
 
-li { list-style: none; }
+<body id="top">
 
-header a,
-header img,
-footer a,
-footer img,
-time,
-span,
-input,
-button,
-textarea,
-i{ display: block; }
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-header img,footer img { height: auto; }
-
-input,
-button
-{
-  background: none;
-  border: none;
-  font: inherit;
-}
-
-input { width: 100%; }
-
-button { cursor: pointer; }
-
-i{ pointer-events: none; }
-
-address { font-style: normal; }
-
-html {
-  font-size: 10px;
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: var(--bg-dark-purple);
-  background-image: url("../../images/body-bg.jpg");
-  background-repeat: repeat;
-  color: var(--text-gainsboro);
-  font-family: var(--fontFamily-oxanium);
-  font-size: var(--fontSize-4);
-  font-weight: var(--weight-regular);
-  line-height: 1.6;
-  overflow-x: hidden;
-  width: 100vw;
-}
-
-::-webkit-scrollbar { width: 4px; }
-
-::-webkit-scrollbar-track { background-color: var(--bg-dark-purple); }
-
-::-webkit-scrollbar-thumb { background-color: var(--bg-purple); border-radius: 15px;}
-
- /*-----------------------------------*\
-    #REUSED STYLE
-\*-----------------------------------*/
-
-.container { padding-inline: 12px; }
-  
-.has-before,
-.has-after {
-  position: relative;
-  z-index: 1;
-}
-
-.has-before::before,
-.has-after::after {
-  content: "";
-  position: absolute;
-
-}
-
-.title { color: var(--text-white); }
-
-
-.h1,
-.h3 { line-height: 1.3; }
-
-.h1 {
-    font-size: var(--fontSize-1);
-    font-weight: var(--weight-semiBold);
-}
-
-.section-title,
-.section-subtitle,
-.section-text { text-align: center; }
-
-.section-subtitle {
-    color: var(--text-white);
-    font-weight: var(--weight-semiBold);
-    font-size: var(--fontSize-5);
-    text-transform: uppercase;
-}
-
-.btn {
-    position: relative;
-    background-image: var(--gradient-1);
-    color: var(--text-white);
-    font-size: var(--fontSize-6);
-    font-weight: var(--weight-semiBold);
-    max-width: max-content;
-    min-width: 180px;
-    height: 50px;
-    display: grid;
-    place-items: center;
-    padding-inline: 30px;
-    clip-path: var(--clip-path-3);
-    overflow: hidden;
-    border-radius: 5px;
-    transition: 400ms;
-    cursor: pointer;
-}
-
-.btn:hover::selection{background-color: #b477ff;}
-
-.btn::before {
-    content: "";
-    position: absolute;
-    top: var(--top, 50%);
-    left: var(--left, 50%);
-    width: 250%;
-    padding-block-end: 250%;
-    background-color: var(--bg-purple);
-    transform: translate(-50%, -50%) scale(0);
-    border-radius: var(--radius-circle);
-    z-index: -1;
-    transition: transform var(--transition-2);
-}
-
-
-.btn:hover{scale: 1.1;}
-
-.btn:hover::before { transform: translate(-50%, -50%) scale(1); }
-
-.log-btn{
-  background-image: var(--gradient-1);
-  color: var(--text-white);
-  font-size: var(--fontSize-6);
-  font-weight: var(--weight-semiBold);
-  height: 50px;
-  width: 50px;
-  display: grid;
-  place-items: center;
-  justify-self: right;
-  border-radius: 50%;
-  transition: 400ms;
-  cursor: pointer;
-  border: 2px solid #fff;
-  box-shadow: inset -5px 5px 5px hsla(0, 0%, 100%, 0.3),inset 5px -5px 5px hsla(0, 0%, 0%, 0.3),0 0 10px hsla(253, 100%, 80%, 0.5);
-}
-
-.log-btn:hover{scale: 1.1;}
-
-.log-btn:active{scale: 0.9;}
-
-.log-btn:hover::selection{background-color: #b477ff;}
-
-.w-100 { width: 100%; }
-
-.logo{cursor: pointer;}
-
-/*-----------------------------------*\
-    #HEADER
-\*-----------------------------------*/
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--bg-oxford-blue);
-    padding: 10px 12px;
-    z-index: 15;
-    animation: slideUP 1s ease forwards;
-    border-bottom: 1px solid #fff;
-    box-shadow: 0 2px 10px var(--bg-purple),0 2px 10px var(--border-purple-alpha-30);
-}
-  
-@keyframes slideUP {
-    0% { transform: translateY(-100%); }
-    100% { transform: translateY(0); }
-}
-
-.header .container {
-    display: grid;
-    grid-template-columns: 8fr 1fr 1fr;
-}
-
-.line {
-    height: 3px;
-    width: 10px;
-    margin-block: 4px;
-    background-color: var(--text-gainsboro);
-    border-radius: 8px;
-    transition: var(--transition-1);
-}
-
-.line-2 { width: 20px; }
-
-.line-3 { margin-inline-start: auto; }
-
-input.nav-toggle-btn-active{
-    display: none;
-}
-
-input.nav-toggle-btn-active:checked ~ .line-1{
-    transform: rotate(45deg) translate(4px, 1.5px);
-}
-
-input.nav-toggle-btn-active:checked ~ .line-2{
-    transform: rotate(-45deg);
-}
-
-input.nav-toggle-btn-active:checked ~ .line-3{
-    transform: rotate(45deg) translate(-3px, -1px);
-}
-
-.navbar {
-  position: absolute;
-  top: calc(100% - 1px);
-  right: 12px;
-  left: 12px;
-  background-color: var(--bg-oxford-blue);
-  padding: 0 15px;
-  clip-path: var(--clip-path-1);
-  transform-origin: top;
-  transition: 400ms ease-in-out;
-  scale: 1 0;
-  translate: 0 1px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom: 1px solid #fff;
-  border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
-}
-
-input.nav-toggle-btn-active:checked ~ .navbar{
-  clip-path: var(--clip-path-2);
-  scale: 1 1;
-}
-.navbar-link {
-  padding: 15px 25px;
-  text-transform: uppercase;
-  font-size: var(--fontSize-7);
-  font-weight: var(--weight-semiBold);
-  color: var(--text-white);
-  transition: 300ms;
-  cursor: pointer;
-  margin: 10px 0;
-  border-radius: 15px;
-  background-color: hsla(253, 100%, 65%, 0.3);
-  box-shadow: inset 5px 5px 5px hsla(0, 0%, 0%, 0.3), inset -5px -5px 5px hsla(0, 0%, 100%, 0.3);
-}
-
-.navbar-link::after{
-content: "";
-display: none;
-height: 3px;
-background: var(--text-purple);
-border-radius: 5px;
-scale: 0 1;
-transition: 300ms;
-}
-
-.navbar-link:hover{color: var(--text-purple);} 
-
-.navbar-link:hover::after{scale: 1.3 1;}
-
-.label-nav-toggle-btn{max-width: fit-content; justify-self: center; align-self: center;}
-
-
-
-/*-----------------------------------*\
-  #SIDE NAVBAR
-\*-----------------------------------*/
-
-
-main{
-  overflow: hidden;
-}
-
-.fake-main{
-  margin: 0;
-  width: 100%;
-  height: 10px;
-  border-bottom: 1px solid #fff;
-  background: #100d2a;
-  box-shadow: -2px 7px 10px var(--bg-purple),-2px 7px 10px var(--border-purple-alpha-30);
-
-}
-
-article{
-  /* margin-left: 5rem; */
-  padding: 2rem 2rem calc(2rem - 10px) 2rem;
-  padding-top: 100px;
-  background-color: hsla(246, 53%, 11%, 0.7);
-  gap: 20px;
-  display: grid;
-  grid-template-rows: 65px 600px repeat(4,auto);
-}
-
-.srch-check{display: none;}
-
-.srch-check:checked ~ .search .search-bar{display: block; scale: 1;}
-
-.srch-check:checked ~ .search{width: 100%;}
-
-.srch-check:not(:checked) ~ .search .search-bar{transition: 400ms;}
-
-.search-bar{
-  margin-left: 30px;
-  scale:0 1;
-  transition: 400ms 100ms;
-  transform-origin: left;
-  color: #fff;
-  outline: none;
-  width: 90%;
-}
-
-.search-bar::placeholder{color: hsl(0, 0%, 79%);}
-
-.search{
-  border-radius: 50px;
-  height: 60px;
-  width: 60px;
-  transition: 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  padding: 0 20px;
-  font-size: 20px;
-  gap: 10px;
-  background-color: #15156B;
-  display: grid;
-  grid-template-columns: auto;
-  position: relative;
-  box-shadow: inset 5px 5px 5px hsla(0, 0%, 0%, 0.3), inset -5px -5px 5px hsla(246, 100%, 73%, 0.4);
-}
-
-.srch-icon{
-  position: absolute;
-  top: 25%;
-  left: 20px;
-  cursor: pointer;
-}
-
-
-/* 
-  #SWIPER SLIDE 
-*/
-
-
-
-.slider-container{
-  width: 100%;
-  display: grid;
-  place-items: center;
-  padding-top: 10px;
-}
-
-.slider-wrapper{
-  position: absolute;
-  max-width: 84rem;
-  margin: 0 auto;
-  height: 600px;
-}
-
-.slider{
-  display: flex;
-  aspect-ratio: 9/13.79;
-  height: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-}
-
-.slider::-webkit-scrollbar{display: none;}
-
-.slider img{
-  place-items: center;
-  height: 100%;
-  aspect-ratio: 9/13.78;
-  flex: 1 0 100%;
-  scroll-snap-align: center;
-}
-
-.slider img{
-  border-radius: 15px;
-}
-
-
-.slider-nav{
-  display: flex;
-  column-gap: 1rem;
-  position: absolute;
-  bottom: 1.25rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-.slider-nav a{
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  background-color: #fff;
-  opacity: 0.75;
-  transition: opacity ease 250ms;
-}
-
-.slider-nav a:hover{
-  opacity: 1;
-}
-
-
-
-
-.games-grid img{width: 100%;}
-
-
-
-.games-grid {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 20px;
-}
-
-.game-card img{
-  border-radius: 5px;
-  text-align: center;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-.game-card img:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
-}
-
-
-
-
-.games-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  background-color: hsla(246, 65%, 40%, 0.4);
-  border-radius: 10px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
-}
-
-
-
-.db{
-  width: 100%; 
-  height: 60vh; 
-  background: green;
-}
-
-
-
-
-
-
-/*-----------------------------------*\
-  #MEDIA SCROLLER
-\*-----------------------------------*/
-
-.scroll-games-container{overflow: hidden;width: 100%;height: 70%;}
-
-
-.scroll-games {
-  font-size: 1.25rem;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #100d2a;
-  display: none;
-  overflow: hidden;
-}
-
-.scroll-games img,
-.scg {
-  max-width: 100%;
-  display: block;
-}
-
-.media-container {
-  position: relative;
-}
-
-.media-scroller,
-.media-group {
-  display: grid;
-  gap: 0.25rem;
-  grid-auto-flow: column;
-}
-
-.media-scroller {
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  grid-auto-columns: 100%;
-  padding: 0 3rem;
-  scroll-padding-inline: 3rem;
-}
-
-.media-group {
-  grid-auto-columns: 1fr;
-}
-
-.media-element {
-  border-radius: 0.25rem;
-  overflow: hidden;
-}
-
-.media-element img {
-  width: 100%; 
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-}
-
-.next,
-.previous {
-  display: none;
-  align-items: center;
-  z-index: 10;
-  position: absolute;
-  width: 3rem;
-  padding: 1rem;
-  background: rgb(0 0 0 / 0.3);
-}
-
-.previous {
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.next {
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.media-group:first-child :where(.next, .previous) {
-  display: flex;
-}
-
-.media-scroller:hover :where(.next, .previous) {
-  opacity: 1;
-}
-
-:where(.next, .previous):hover {
-  background: rgb(0 0 0 / 0.7);
-}
-
-:where(.next, .previous) > svg {
-  transition: transform 75ms linear;
-  transform: scale(1);
-}
-:where(.next, .previous):hover > svg {
-  transform: scale(1.2);
-}
-
-.media-group:target :where(.next, .previous) {
-  display: flex;
-}
-
-.media-scroller:has(:target:not(:first-child))
-  .media-group:first-of-type
-  .next {
-  display: none;
-}
-
-/* navigation indicators */
-
-.navigation-indicators {
-  opacity: 0;
-  position: absolute;
-  display: flex;
-  gap: 3px;
-  top: -1rem;
-  right: 2rem;
-}
-
-.navigation-indicators > * {
-  width: 1rem;
-  height: 2px;
-  background: white;
-  opacity: 0.5;
-}
-
-.media-scroller:has(.media-group:target)
-  .navigation-indicators
-  > *:nth-child(1) {
-  opacity: 0.5;
-}
-
-.navigation-indicators > *:nth-child(1),
-.media-group:nth-child(1):target ~ .navigation-indicators > *:nth-child(1) {
-  opacity: 1;
-}
-
-.media-group:nth-child(2):target ~ .navigation-indicators > *:nth-child(2) {
-  opacity: 1;
-}
-
-.media-group:nth-child(3):target ~ .navigation-indicators > *:nth-child(3) {
-  opacity: 1;
-}
-
-.media-group:nth-child(4):target ~ .navigation-indicators > *:nth-child(4) {
-  opacity: 1;
-}
-
-.media-scroller:hover .navigation-indicators {
-  opacity: 1;
-}
-
-.img-content h4{
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: var(--weight-bold);
-  color: #fff;
-  letter-spacing: 0.1rem;
-  transform: translateY(50%);
-  opacity: 0;
-  transition: 400ms;
-}
-
-.media-element{position: relative;}
-
-.media-element .img-content{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 1.1rem;
-  text-align: center;
-  display: grid;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.media-element :is(img,.img-content){transition: 400ms;}
-
-.media-element:hover img{filter: brightness(0.5);}
-
-.media-element:hover .img-content h4{transform: translateY(20%);opacity: 1;}
-
-.scroll-games *{overflow: hidden;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
-
-.hero {
-    padding-block-start: 170px;
-    text-align: center;
-    width: 100vw;
-    overflow: hidden;
-}
-
-.hero .section-subtitle { letter-spacing: 5px; }
-
-.hero-title { margin-block: 20px 25px; }
-
-
-.dh{height: 800px;}
-
-
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
-.footer{
-  padding-top: 30px;
-}
-.footer-top .container {
-  display: grid;
-  gap: 35px;
-}
-
-.footer-text { margin-block: 20px 25px; }
-
-.social-list {
-  display: flex;
-  gap: 10px;
-}
-
-.footer .social-link {
-  width: 40px;
-  height: 40px;
-  background-color: var(--bg-purple-alpha-30);
-  display: grid;
-  place-items: center;
-  clip-path: var(--clip-path-8);
-  transition: var(--transition-1);
-}
-
-.footer .social-link:hover {
-  background-color: var(--bg-purple);
-  transform: translateY(-2px);
-}
-
-.footer-list-title {
-  font-size: var(--fontSize-3);
-  font-weight: var(--weight-semiBold);
-  line-height: 1;
-  position: relative;
-  padding-block-end: 10px;
-  margin-block-end: 20px;
-  max-width: max-content;
-}
-
-.footer-list-title::after {
-  bottom: 0;
-  left: 0;
-  width: 50%;
-  height: 4px;
-  background-color: var(--bg-purple);
-}
-
-.footer-link {
-  padding-block: 5px;
-  color: var(--text-white);
-  transition: var(--transition-1);
-}
-
-.footer-link:hover{ color: var(--text-purple); }
-
-.contact-item .span {
-  color: var(--text-purple);
-  font-size: var(--fontSize-7);
-  text-transform: uppercase;
-  font-weight: var(--weight-semiBold);
-}
-
-.footer-bottom {
-  clip-path: var(--clip-path-9);
-  background-color: var(--bg-oxford-blue-alpha-80);
-}
-
-.copyright { padding: 30px 20px; }
-
-
-/*-----------------------------------*\
-  #BACK TO TOP
-\*-----------------------------------*/
-
-.back-top-btn {
-  position: fixed;
-  bottom: 0;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-image: var(--gradient-1);
-  display: grid;
-  place-items: center;
-  font-size: 2.1rem;
-  transition: var(--transition-1);
-  z-index: 4;
-  opacity: 0;
-  animation: visi forwards;
-  animation-timeline: view(30vh);
-  box-shadow: inset -5px 5px 5px hsla(0, 0%, 100%, 0.3),inset 5px -5px 5px hsla(0, 0%, 0%, 0.3);
-}
-
-.ion-icon{transition: var(--transition-1) 100ms;}
-
-.back-top-btn:hover{scale: 0.9;}
-
-.back-top-btn:hover .ion-icon{transform: translateY(-5px);}
-
-@keyframes visi {
-  10%,100%{
-    opacity: 1;
-    transform: translateY(-20px);
-  }
-}
-
-.stroke-top{
-  width: 110%;
-  height: 110%;
-  position: fixed;
-  top: -7%;
-  right: -6%;  
-  rotate: -90deg;
-}
-
-.stroke-top svg{width: 55px;height: 55px;}
-
-.stroke-top svg circle{  
-  position: absolute;
-  fill: transparent;
-  stroke-width: 3;
-  stroke: #fff;
-  stroke-linecap: round;
-  stroke-dasharray: 157.9402313232422;
-  stroke-dashoffset: 157.9402313232422;
-  transform: translate(2px,2px);
-  z-index: 999;
-  animation: str-animate linear ;
-  animation-timeline: scroll();
-}
-
-@keyframes str-animate {
-  to{stroke-dashoffset: 0;}
-}
-
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
-
-/**
- * responsive for large than 575px screen
- */
-
- @media (min-width: 575px) {
-
-  /**
-   * REUSED STYLE
-   */
-
-  .container {
-    max-width: 540px;
-    width: 100%;
-    margin-inline: auto;
-  }
-
-
-
-  /**
-   * HEADER
-   */
-
-  .header .logo img { width: 120px; }
-
-
-  .games-grid {
-    grid-template-columns: repeat(3,1fr);
-  }
-
-  /**
-   * FOOTER
-   */
-
-  .footer-top .container { grid-template-columns: 1fr 1fr; }
-
-}
-
-
-
-/**
- * responsive for large than 768px screen
- */
-
-@media (min-width: 768px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
-
-  :root {
-
-    /**
-     * TYPOGRAPHY
-     */
-
-    /* font size */
-    --fontSize-1: 6.5rem;
-    --fontSize-2: 3.2rem;
-
-  }
-
-
-  /**
-   * REUSED STYLE
-   */
-
-  .container { max-width: 720px; }
-
-  .h1 { line-height: 1; }
-
-
-
-
-  /**
-   * HERO
-   */
-
-  .hero .section-subtitle { letter-spacing: 10px; }
-
-  .hero-banner-bg {
-    display: block;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: scale(1.3);
-    transform-origin: bottom;
-    z-index: -1;
-  }
-
-  .wrapper span{scale: 0.8;}
-
-  .scroll-games{display: block;}
-
-  .games-grid{grid-template-columns: repeat(4,1fr);}
-
-
-}
-
-
-
-/**
- * responsive for large than 992px screen
- */
-
-@media (min-width: 992px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
-
-  :root {
     
-    /**
-     * TYPOGRAPHY
-     */
+      <!-- 
+    - #HEADER
+  -->
 
-    /* font size */
-    --fontSize-2: 4.5rem;
+<header class="header">
+    <div class="container header-container">
 
-    /**
-     * SPACING
-     */
-
-    --section-spacing: 100px;
-
-  }
+      <a href="../Home/Index.html" class="logo">
+        <img src="../../images/logo.png" width="100" height="53" alt="Asobi home">
+      </a>
 
 
-  /**
-   * REUSED STYLE
-   */
+      
+      <label for="nav-toggle-btn" class="label-nav-toggle-btn">
+        <input type="checkbox" id="nav-toggle-btn" class="nav-toggle-btn-active">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+        <nav class="navbar">
+            <ul class="navbar-list">
+        
+              <li class="navbar-item">
+                <a href="../Home/Index.html" class="navbar-link">home</a>
+              </li>
 
-  .container { max-width: 960px; }
+              <li class="navbar-item">
+                <a href="../Games/Games.html" class="navbar-link">Games</a>
+              </li>
+              
+              <li class="navbar-item">
+                <a href="#contact" class="navbar-link">contact</a>
+              </li>
+            </ul>
+          </nav>
+        </label>
+        
+        <a href="../LogIn/Login.html" class="log-btn"><i class="fa-regular fa-user"></i></a>
+    </div>
+</header>
 
-  .h2 { line-height: 1.1; }
+<main>
+  <article>
+    
+    <div>
+      <input type="checkbox" class="srch-check" id="srch">
+      <div class="search">
+        <label for="srch" class="srch-icon"><i class="fa-solid fa-magnifying-glass"></i></label>
+        <input type="search" class="search-bar" id="srch" placeholder="Search games">
+      </div>
+    </div>
 
+    
+    <div class="slider-container">
 
+      <div class="slider-wrapper">
+        
+        <div class="slider">
+          <div id="slide-1" class="img1">
+            <a href="https://store.epicgames.com/en-US/p/prince-of-persia-the-lost-crown"><img src="../../images/P_O_P.avif" alt="Prince Of Persia"></a>
 
-  /**
-   * HEADER
-   */
+          </div>
+          <div id="slide-2" class="img2">
+            <a href="https://store.epicgames.com/en-US/p/the-lord-of-the-rings-return-to-moria-f01344"><img src="../../images/R_T_M.avif" alt="Return to Moria"></a>
+          </div>
+          <div id="slide-3" class="img3">
+            <a href="https://store.epicgames.com/en-US/p/horizon-forbidden-west-complete-edition"><img src="../../images/Horizon.avif" alt="Horizon"></a>
+          </div>
+          <div id="slide-4" class="img4">
+            <a href="https://store.epicgames.com/en-US/p/alan-wake-2"><img src="../../images/A_W_2.avif" alt="Alan Wake II"></a>
+          </div>
+          <div id="slide-5" class="img5">
+            <a href="https://store.epicgames.com/en-US/p/stalker-2-heart-of-chornobyl"><img src="../../images/Stalker2.avif" alt="Stalker 2"></a>
+          </div>
+          <div id="slide-6" class="img6">
+            <a href="https://store.epicgames.com/en-US/p/skull-and-bones"><img src="../../images/S_And_B.avif" alt="Skull And Bones"></a>
+          </div>
+        </div>
 
-  .line { display: none; }
+        <div class="slider-nav">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+          <a href="#slide-4"></a>
+          <a href="#slide-5"></a>
+          <a href="#slide-6"></a>
+        </div>
 
-  .header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .header{padding-bottom: 0px;padding-top: 0;}
-
-  .navbar {
-    all: unset;
-    display: block;
-  }
-
-  .navbar-item,
-  .navbar-item:last-child { border: none; }
-
-  .navbar-list { display: flex; }
-
-  .header .btn {
-    display: grid;
-    text-align: center;
-  }
-
-  .navbar-link{ background-color: transparent; box-shadow: 0 0 0 transparent;}
-
-  .navbar-link::after{ display: block;}
-
-  /**
-   * HERO
-   */
-
-  .hero-banner-bg { transform: scale(1.2); }
-
-  .wrapper span{scale: 1;}
-
-
-
-  .games-grid{grid-template-columns: repeat(6,1fr);}
-
-
-  /**
-   * FOOTER
-   */
-   
-  .footer-top .container { grid-template-columns: repeat(4, 1fr); }
-
-}
-
-
-/**
- * responsive for large than 1200px screen
- */
-
-@media (min-width: 1200px) {
-
-  /**
-   * REUSED STYLE
-   */
-
-  .container { max-width: 1140px; }
-  .header-container{max-width: 1200px;}
-
-  .section-text { margin-block-end: 60px; }
+      </div>
+    </div>
 
 
-  /**
-   * HERO
-   */
+      <section class="games-container">
+      
+        <div class="games-grid">
+          <div class="game-card"><a href="https://store.epicgames.com/en-US/p/bus-simulator-car-driving-40dbef"><img src="../../images/Games-images/Game1.avif" alt=""></a></div>
+          <div class="game-card"><a href="https://store.epicgames.com/en-US/p/polygon-survival-2374fc"><img src="../../images/Games-images/Game2.avif" alt=""></a></div>
+          <div class="game-card"><a href="https://store.epicgames.com/en-US/p/it-follows-you-b11f3e"><img src="../../images/Games-images/Game3.avif" alt=""></a></div>
+          <div class="game-card"><a href="https://store.epicgames.com/en-US/p/destiny-2--lightfall-plus-annual-pass"><img src="../../images/Games-images/Game4.avif" alt=""></a></div>
+          <div class="game-card"><a href="https://store.epicgames.com/en-US/p/scary-and-dot-86b1ff"><img src="../../images/Games-images/Game5.avif" alt=""></a></div>
+          <div class="game-card"><a href="https://store.epicgames.com/en-US/p/he-will-shoot-46efff"><img src="../../images/Games-images/Game6.avif" alt=""></a></div>
+          <div class="game-card"><a href="https://store.epicgames.com/en-US/p/extreme-car-drift-simulator-cbd3c8"><img src="../../images/Games-images/Game7.avif" alt=""></a></div>
+          <div class="game-card"><a href="https://store.epicgames.com/en-US/p/3d-chess-online-615201"><img src="../../images/Games-images/Game8.avif" alt=""></a></div>
+        </div>
+      </section>
 
-  .hero { padding-block-start: 200px; }
+      <section class="games-container">
+      
+        <div class="games-grid">
+          <div class="game-card"><a href="https://store.epicgames.com/en-US/p/chicken-police-paint-it-red"><img src="../../images/Games-images/Game9.avif" alt=""></a></div>
+          <div class="game-card"><a href="https://store.epicgames.com/en-US/p/cargo-truck-simulator-2023-ff83fb"><img src="../../images/Games-images/Game10.avif" alt=""></a></div>
+          <div class="game-card"><a href="https://store.epicgames.com/en-US/p/two-skateboards-driving-simulator-c0ea1f"><img src="../../images/Games-images/Game11.avif" alt=""></a></div>
+          <div class="game-card"><a href="https://store.epicgames.com/en-US/p/lines-guarder-174742"><img src="../../images/Games-images/Game12.avif" alt=""></a></div>
+          <div class="game-card"><a href="https://store.epicgames.com/en-US/p/through-the-darkest-of-times"><img src="../../images/Games-images/Game13.avif" alt=""></a></div>
+          <div class="game-card"><a href="https://store.epicgames.com/en-US/p/city-car-parking-simulator-231485"><img src="../../images/Games-images/Game14.avif" alt=""></a></div>
+          <div class="game-card"><a href="https://store.epicgames.com/en-US/p/school-bus-driving-simulator-b878a8"><img src="../../images/Games-images/Game15.avif" alt=""></a></div>
+          <div class="game-card"><a href="https://store.epicgames.com/en-US/p/industria"><img src="../../images/Games-images/Game16.avif" alt=""></a></div>
+        </div>
+      </section>
 
-  .hero-banner-bg { transform: scale(1.2); }
+      <section class="games-container">
+      
+        <div class="games-grid">
+          <div class="game-card"><a href="https://store.epicgames.com/en-US/p/need-for-spirit-offroad-edition-7eee16"><img src="../../images/Games-images/Game17.avif" alt=""></a></div>
+          <div class="game-card"><a href="https://store.epicgames.com/en-US/p/idle-champions-of-the-forgotten-realms--sword-of-kas-familiar-pack"><img src="../../images/Games-images/Game18.avif" alt=""></a></div>
+          <div class="game-card"><a href="https://store.epicgames.com/en-US/p/trigon-ce1936"><img src="../../images/Games-images/Game19.avif" alt=""></a></div>
+          <div class="game-card"><a href="https://store.epicgames.com/en-US/p/tomb-raider-iiii-remastered-538640"><img src="../../images/Games-images/Game20.avif" alt=""></a></div>
+          <div class="game-card"><a href="https://store.epicgames.com/en-US/p/real-motocross-driving-simulator-c8ff84"><img src="../../images/Games-images/Game21.avif" alt=""></a></div>
+          <div class="game-card"><a href="https://store.epicgames.com/en-US/p/scarlet-hood-and-the-wicked-wood"><img src="../../images/Games-images/Game22.avif" alt=""></a></div>
+          <div class="game-card"><a href="https://store.epicgames.com/en-US/p/police-car-suv-simulator-092560"><img src="../../images/Games-images/Game23.avif" alt=""></a></div>
+          <div class="game-card"><a href="https://store.epicgames.com/en-US/p/mortal-online-2-d7bb78"><img src="../../images/Games-images/Game24.avif" alt=""></a></div>
+        </div>
+      </section>
 
-  .hero-banner .w-100 {
-    max-width: max-content;
-    margin-inline: auto;
-  }
+
+      <section class="scroll-games-container">
+        <div class="scroll-games">
+          <div class="media-container">
+            <div class="media-scroller">
+              <!--   Group 1 -->
+              <div class="media-group" id="group-1">
+                <div class="media-element">
+                  <a href="https://steamunlocked.net/620a33-detroit-become-human-free-download/"><img src="../../images/Game1_1.jpeg">
+                  <div class="img-content">
+                    <h4>Detroit:<br> Become Human Free Download (v2023.09.28)</h4>
+                    <p></p>
+                  </div>
+                  </a>
+                </div>
+                <div class="media-element">
+                  <a href="https://www.playstation.com/en-us/games/god-of-war-ragnarok/"><img src="../../images/Game2_1.avif">
+                  <div class="img-content">
+                    <h4>God Of War <br> Ragnarok</h4>
+                  </div>
+                  </a>
+                </div>
+                <div class="media-element">
+                  <a href="https://www.playstation.com/en-us/games/uncharted-4-a-thiefs-end/"><img src="../../images/Game3_1.jpg">
+                  <div class="img-content">
+                    <h4>uncharted 4 <br> A Thief's end</h4>
+                  </div>
+                  </a>
+                </div>
+                <div class="media-element">
+                  <a href="https://steamunlocked.net/3dd762-far-cry-6-free-download/"><img src="../../images/Game4_1.jpg">
+                  <div class="img-content">
+                    <h4>Far Cry 6 <br> Free Download <br> (v1.5.0 & ALL DLC)</h4>
+                  </div>
+                  </a>
+                </div>
+                <div class="media-element">
+                  <a href="https://www.ubisoft.com/en-us/game/assassins-creed/assassins-creed"><img src="../../images/Game5_1.webp">
+                  <div class="img-content">
+                    <h4>Assassin's creed</h4>
+                  </div>
+                  </a>
+                </div>
+                <a class="next" href="#group-2" aria-label="next">
+                  <svg class="scg">
+                    <use href="#next"></use>
+                  </svg>
+                </a>
+              </div>
+              <!-- Group 2   -->
+              <div class="media-group" id="group-2">
+                <a class="previous" href="#group-1">
+                  <svg class="scg">
+                    <use href="#previous"></use>
+                  </svg>
+                </a>
+                <div class="media-element">
+                  <a href="https://steamunlocked.net/c8a9136-resident-evil-village-free-download/"><img src="../../images/Game1_2.webp" alt="">
+                            <div class="img-content">
+                    <h4>Resident Evil Village <br> Free Download <br> (v2023.06.26 & ALL DLC)</h4>
+                  </div>
+                  </a>
+                </div>
+                <div class="media-element">
+                  <a href="https://steamunlocked.net/500c26-little-nightmares-free-download/"><img src="../../images/Game2_2.webp" alt="">
+                            <div class="img-content">
+                    <h4>Little Nightmares <br> Free Download <br> (Incl. All Chapters)</h4>
+                  </div>
+                  </a>
+                </div>
+                <div class="media-element">
+                  <a href="https://steamunlocked.net/9-five-nights-at-freddys-free-download/"><img src="../../images/Game3_2.avif" alt="">
+                            <div class="img-content">
+                    <h4>Five Nights At Freddy's <br> Free Download</h4>
+                  </div>
+                  </a>
+                </div>
+                <div class="media-element">
+                  <a href="https://steamunlocked.net/43e71-fears-to-fathom-home-alone-free-download/"><img src="../../images/Game4_2.jpg" alt="">
+                            <div class="img-content">
+                    <h4>Fears To Fathom <br> Home Alone <br> Free Download</h4>
+                  </div>
+                  </a>
+                </div>
+                <div class="media-element">
+                  <a href="https://store.steampowered.com/app/238320/Outlast/"><img src="../../images/Game5_2.jpg" alt="">
+                            <div class="img-content">
+                    <h4>Outlast</h4>
+                  </div>
+                  </a>
+                </div>
+                <a class="next" href="#group-3" aria-label="next">
+                  <svg class="scg">
+                    <use href="#next"></use>
+                  </svg>
+                </a>
+              </div>
+              <!-- Group 3   -->
+              <div class="media-group" id="group-3">
+                <a class="previous" href="#group-2">
+                  <svg class="scg">
+                    <use href="#previous"></use>
+                  </svg>
+                </a>
+                <div class="media-element">
+                  <a href="https://tlauncher.org/en/"><img src="../../images/Game1_3.jpeg" alt=""></a>
+                </div>
+                <div class="media-element">
+                  <a href="https://steamunlocked.net/15-ark-survival-ascended-free-download/"><img src="../../images/Game2_3.jpg" alt=""></a>
+                </div>
+                <div class="media-element">
+                  <a href="https://store.steampowered.com/app/252490/Rust/"><img src="../../images/Game3_3.jpg" alt=""></a>
+                </div>
+                <div class="media-element">
+                  <a href="https://store.steampowered.com/app/648800/Raft/"><img src="../../images/Game4_3.jpg" alt=""></a>
+                </div>
+                <div class="media-element">
+                  <a href="https://steamunlocked.net/93-the-forest-free-v4-download/"><img src="../../images/Game5_3.jpg" alt=""></a>
+                </div>
+                <a class="next" href="#group-4" aria-label="next">
+                  <svg class="scg">
+                    <use href="#next"></use>
+                  </svg>
+                </a>
+              </div>
+              <!--  Group 4  -->
+              <div class="media-group" id="group-4">
+                <a class="previous" href="#group-3">
+                  <svg class="scg">
+                    <use href="#previous"></use>
+                  </svg>
+                </a>
+                <div class="media-element">
+                  <a href="https://www.fortnite.com/?lang=en-US"><img src="../../images/Game1_4.jpg" alt=""></a>
+                </div>
+                <div class="media-element">
+                  <a href="https://pubg.com/en/main"><img src="../../images/Game2_4.avif" alt=""></a>
+                </div>
+                <div class="media-element">
+                  <a href="https://www.callofduty.com/ar/"><img src="../../images/Game3_4.jpg" alt=""></a>
+                </div>
+                <div class="media-element">
+                  <a href="https://playvalorant.com/ar-ae/"><img src="../../images/Game4_4.jpeg" alt=""></a>
+                </div>
+                <div class="media-element">
+                  <a href="https://overwatch.blizzard.com/en-us/"><img src="../../images/Game5_4.jpg" alt=""></a>
+                </div>
+              </div>
+              <div class="navigation-indicators">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <svg class="scg">
+            <symbol id="next" viewBox="0 0 256 512">
+              <path fill="white"
+                d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+            </symbol>
+            <symbol id="previous" viewBox="0 0 256 512">
+              <path fill="white"
+                d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+            </symbol>
+          </svg>
+        </div>
+      </section>
+
+  </article>
+  
+</main>
 
 
-  .games-grid{grid-template-columns: repeat(8,1fr);}
+<div class="fake-main"></div>
 
-  /**
-   * FOOTER
-   */
+      <!-- 
+    - #BACK TO TOP
+  -->
 
-  .footer-top .container { grid-template-columns: 1fr 1fr 1fr; }
+<div class="back-top">
+  <a href="#top" class="back-top-btn">
+      <i name="arrow-up-outline" class="fa-solid fa-arrow-up ion-icon"></i>
+      <div class="stroke-top">
+        <svg>
+          <circle cx="25" cy="25" r="25.3"></circle>
+        </svg>
+      </div>
+  </a>
+  
+</div>
 
-  .footer .logo img { width: 205px; }
-}
 
+
+    <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#top" class="logo">
+            <img src="../../images/logo.png" width="110" height="53" alt="Asobi home">
+          </a>
+
+          <p class="footer-text">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ul class="social-list">
+            <li>
+              <a href="https://www.facebook.com" class="social-link">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.twitter.com" class="social-link">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com" class="social-link">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.youtube.com" class="social-link">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+          <ul>
+
+            <li>
+              <a href="../About/About.html" class="footer-link">About</a>
+            </li>
+
+            <li>
+              <a href="../Privacy-and-Policy/Privacy_and_policy.html" class="footer-link">Privacy and Policy</a>
+            </li>
+
+            <li>
+              <a href="../Terms-of-Use/Terms_of_service.html" class="footer-link">Terms of Service</a>
+            </li>
+
+            <li>
+              <a href="../Contact/contact.html" class="footer-link">Contact Us</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after" id="contact">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+            <address class="contact-link">
+              Kabukichō 歌舞伎町 Shinjuku, Tokyo 160-0021 Japon
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+            <a href="mailto:SayConUma@gmail.com" class="contact-link">SayConUma@gmail.com</a>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Phone:</span>
+            <a href="tel:+212691567418" class="contact-link">+212 691-567418</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 All Rights Reserved By Imrane.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+</html>
