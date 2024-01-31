@@ -298,7 +298,7 @@ main{
 
 .w-100 { width: 100%; }
 
-.logo{cursor: pointer;}
+.logo{cursor: pointer;width: fit-content;}
 
 /*-----------------------------------*\
     #HEADER
