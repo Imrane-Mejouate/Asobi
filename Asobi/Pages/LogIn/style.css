@@ -176,7 +176,7 @@
 
 .w-100 { width: 100%; }
 
-.logo{cursor: pointer; margin-left: 20px;}
+.logo{cursor: pointer; margin-left: 20px;width: fit-content;}
 
 /*-----------------------------------*\
     #HEADER
