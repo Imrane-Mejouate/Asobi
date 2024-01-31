@@ -176,7 +176,7 @@ box-shadow: inset -5px 5px 5px hsla(0, 0%, 100%, 0.3),inset 5px -5px 5px hsla(0,
 
 .w-100 { width: 100%; }
 
-.logo{cursor: pointer; margin-left: 20px;}
+.logo{cursor: pointer; margin-left: 20px;width: fit-content;}
 
 /*-----------------------------------*\
   #HEADER
