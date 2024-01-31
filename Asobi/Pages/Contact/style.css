@@ -291,7 +291,7 @@ body {
 
 .log-btn:hover::selection{background-color: #b477ff;}
 
-.logo{cursor: pointer;}
+.logo{cursor: pointer;width: fit-content;}
 
 /*-----------------------------------*\
     #HEADER
