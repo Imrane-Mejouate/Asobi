@@ -380,6 +380,8 @@ scale: 0 1;
 transition: 300ms;
 }
 
+.navbar-link:hover::selection{background-color: #b477ff;}
+
 .navbar-link:hover{color: var(--text-purple);} 
 
 .navbar-link:hover::after{scale: 1.3 1;}
