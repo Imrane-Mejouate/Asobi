@@ -176,7 +176,7 @@
 
 .w-100 { width: 100%; }
 
-.logo{cursor: pointer; margin-left: 20px;width: fit-content;}
+.logo{cursor: pointer; margin-left: 20px;}
 
 /*-----------------------------------*\
     #HEADER
@@ -359,13 +359,15 @@
 }
 
 .signin-button:hover{
-  filter: brightness(1.2);
+  background-color: #a358ff;
   scale: 1.03;
+  letter-spacing: 5px;
 }
 
 .signin-button:active{
-  filter: brightness(1.7);
-  scale: 0.98;
+  background-color: #bb83ff;
+  scale: 1;
+  letter-spacing: 2px;
 }
 
 .link{
