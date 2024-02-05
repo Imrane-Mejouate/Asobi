@@ -1136,8 +1136,8 @@ transition: 300ms;
 .huh,.huh2{
   position: absolute;
   top: 30%;
-  color: #00fffe;
-  text-shadow: inset -2px 5px 8px #11808a;
+  color: var(--emo-eyes);
+  text-shadow: inset -2px 5px 8px var(--emo-eyes-shadow);
   opacity: 0;
 }
 
