@@ -728,32 +728,39 @@ transition: 300ms;
 
 :root:has(#blue:checked){
   --emo-shadow: hsl(214, 100%, 50%);
+  --huh: hsl(214, 100%, 50%);
   --emo-shadow-broken: hsla(214, 100%, 50%, 0.4);
   --emo-eyes: #00fffe;
 }
 
 :root:has(#purple:checked){
   --emo-shadow: hsl(308, 69%, 46%);
+  --huh: hsl(308, 69%, 46%);
   --emo-shadow-broken: hsla(308, 69%, 46%, 0.4);
   --emo-eyes: hsl(308, 100%, 50%);
 }
 
 :root:has(#yellow:checked){
   --emo-shadow: hsl(48, 100%, 50%);
+  --huh: hsl(48, 100%, 50%);
   --emo-shadow-broken: hsla(48, 100%, 50%, 0.4);
   --emo-eyes: hsl(56, 100%, 50%);
 }
 
 :root:has(#green:checked){
   --emo-shadow: hsl(113, 63%, 48%);
+  --huh: hsl(113, 63%, 48%);
   --emo-shadow-broken: hsla(113, 63%, 48%, 0.4);
   --emo-eyes: hsl(113, 76%, 50%);
 }
 
 :root:has(#red:checked){
   --emo-shadow: hsl(0, 74%, 48%);
+  --huh: hsl(0, 74%, 48%);
   --emo-shadow-broken: hsla(0, 74%, 48%, 0.4);
   --emo-eyes: hsl(0, 100%, 50%);
+  /* --emo-eyes: url(../../images/Sharingan.png);
+  --bright: brightness(1.3); */
 }
 
 
@@ -876,7 +883,9 @@ transition: 300ms;
   width: 25px;
   height: 25px;
   border-radius: 7px;
-  background-color: var(--emo-eyes);
+  background: var(--emo-eyes);
+  background-size: cover;
+  filter: var(--bright);
   box-shadow: inset -2px 5px 8px var(--emo-eyes-shadow);
   position: absolute;
   z-index: 2;
@@ -1136,7 +1145,7 @@ transition: 300ms;
 .huh,.huh2{
   position: absolute;
   top: 30%;
-  color: var(--emo-eyes);
+  color: var(--huh);
   text-shadow: inset -2px 5px 8px var(--emo-eyes-shadow);
   opacity: 0;
 }
