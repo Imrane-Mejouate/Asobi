@@ -1256,7 +1256,6 @@ transition: 300ms;
 
 .news-card .link:is(:hover, :focus-visible) { color: var(--text-purple);}
 
-
 .card-text :is(.more-check,.more){display: none;}
 
 .card-text .more-check:checked ~ .more{display: inline;}
