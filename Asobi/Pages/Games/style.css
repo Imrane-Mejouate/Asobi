@@ -613,7 +613,7 @@ article{
   grid-template-rows: 1fr;
   border-radius: 10px;
   background-color: hsla(236, 50%, 63%, 0.7);
-  padding: 10px;
+  padding: 7px 10px;
   place-self: center;
 }
 
