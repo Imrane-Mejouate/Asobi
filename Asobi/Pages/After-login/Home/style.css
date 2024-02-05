@@ -1409,7 +1409,8 @@ transition: 300ms;
  * responsive for large than 575px screen
  */
 
-@media (min-width: 575px) {
+
+ @media (min-width: 575px) {
 
   /**
    * REUSED STYLE
@@ -1438,6 +1439,10 @@ transition: 300ms;
    */
 
   .footer-top .container { grid-template-columns: 1fr 1fr; }
+
+  .footer-list-qr img{
+    width: 50%;
+  }
 
 }
 
@@ -1501,6 +1506,10 @@ transition: 300ms;
    */
 
    .news-list { grid-template-columns: 1fr 1fr;}
+
+   .footer-list-qr img{
+    width: 70%;
+  }
 
 
    .games-grid{grid-template-columns: repeat(4,1fr);}
