@@ -880,6 +880,10 @@ article{
   transition: 400ms;
 }
 
+.img-content h4.big-game-text{
+  font-size: 1.3rem;
+}
+
 .media-element{position: relative;}
 
 .media-element .img-content{
