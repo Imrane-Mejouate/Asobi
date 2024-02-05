@@ -80,7 +80,7 @@
     --emo-shadow: hsl(214, 100%, 50%);
     --emo-shadow-broken: hsla(214, 100%, 50%, 0.4);
     --emo-eyes: #00fffe;
-    --emo-eyes-shadow: #11808a;
+    --emo-eyes-shadow: rgba(0, 0, 0, 0.5);
 
     
   
@@ -1016,7 +1016,6 @@ transition: 300ms;
   transition: 400ms;
 }
 
-
 @keyframes opa-0{
   0%{opacity: 1;translate: 6px -14px;}
   100%{top: 35%; opacity: 0;}
@@ -1096,12 +1095,14 @@ transition: 300ms;
 
 .news-card .card-title:is(:hover, :focus-visible) { background-size: 100% 4px; }
 
-.news-card .link {
+.news-card .link{
   max-width: max-content;
   margin-block-start: 15px;
   padding-inline-start: 30px;
   transition: var(--transition-1);
 }
+
+.news-card label{display: block;}
 
 .news-card .link::before {
   top: 50%;
@@ -1112,8 +1113,18 @@ transition: 300ms;
   background-color: var(--bg-purple);
 }
 
-.news-card .link:is(:hover, :focus-visible) { color: var(--text-purple); }
+.news-card .link:is(:hover, :focus-visible) { color: var(--text-purple);}
 
+
+.card-text :is(.more-check,.more){display: none;}
+
+.card-text .more-check:checked ~ .more{display: inline;}
+
+.card-text .more-check:checked ~ .etc{display: none;}
+
+.sm-text{font-size: 3rem;}
+
+.m-text{font-size: 2.5rem;}
 
 /*-----------------------------------*\
   #GAMES GRID
@@ -1191,6 +1202,7 @@ transition: 300ms;
 
 .game-card:hover .img-content h4{transform: translateY(20%);opacity: 1;}
 
+.games-section{padding-top: 10px;}
 
 /*-----------------------------------*\
   #FOOTER
