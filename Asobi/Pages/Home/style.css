@@ -808,27 +808,49 @@ transition: 300ms;
   4%{scale: 1 0.2;}
   5%{scale: 1;}
 
+  10%{scale: 1;translate: 0%;}
+  12%{scale: 1.15;translate: -5px;}
+  13%{translate: -7px -5px;}
+
+  17%{scale: 1.15;translate: -7px -5px;}
+  19%{scale: 1;translate: 5px 4px;}
+
+  22%{scale: 1; translate: 5px 4px;}
+  23%{scale: 1.05; translate: 3px -2px;}
+
   25%{    
     scale: 1;
     animation-timing-function: step-end;}
   28%{scale: 1 0.2;}
   29%{scale: 1;}
 
-  35%{scale: 1;animation-timing-function: step-end;}
+  30%{scale: 1.05;translate: 3px -2px;}
+  32%{scale: 1.1; translate: -7px -2px;}
+
+  35%{scale: 1.1;animation-timing-function: step-end;}
   38%{scale: 1 0.2;}
-  39%{scale: 1;animation-timing-function: step-end;}
+  39%{scale: 1.1;animation-timing-function: step-end;}
   42%{scale: 1 0.2;}
-  43%{scale: 1;}
+  43%{scale: 1.1;}
+
+  34%{scale: 1.1; translate: -7px -2px;}
+  36%{scale: 1.05; translate: 3px -2px;}
+
+  45%{scale: 1.05; translate: 3px -2px;}
+  47%{scale: 1; translate: 0%;}
 
   50%{translate: 0%; rotate: 0deg;}
   53%{translate: -18px 15px;}
-  55%{    
+  56%{translate: -16px 7px;}
+  58%{translate: -16px 7px;}
+  60%{translate: -18px 15px;}
+  56%{    
     scale: 1;
     animation-timing-function: step-end;}
   58%{scale: 1 0.2;}
   59%{scale: 1;}
-  62%{translate: -18px 15px;}
-  65%{translate: 27px -10px;}
+  63%{translate: -18px 15px;}
+  66%{translate: 27px -10px;}
   68%{    
     scale: 1;
     animation-timing-function: step-end;}
@@ -853,11 +875,24 @@ transition: 300ms;
   3.8%{scale: 1 0.2;}
   4.8%{scale: 1;}
 
+  10%{scale: 1;translate: 0%;}
+  12%{scale: 1.05;translate: -5px;}
+  13%{translate: -7px -5px;}
+
+  17%{scale: 1.05;translate: -7px -5px;}
+  19%{scale: 1.12;translate: 5px 4px;}
+
+  22%{scale: 1.12; translate: 5px 4px;}
+  23%{scale: 1.05; translate: 3px -2px;}
+
   24.8%{    
-    scale: 1;
+    scale: 1.05;
     animation-timing-function: step-end;}
   27.8%{scale: 1 0.2;}
-  28.8%{scale: 1;}
+  28.8%{scale: 1.05;}
+
+  30%{scale: 1.05;translate: 3px -2px;}
+  32%{scale: 1; translate: -7px -2px;}
 
   34.8%{scale: 1;animation-timing-function: step-end;}
   37.8%{scale: 1 0.2;}
@@ -865,15 +900,24 @@ transition: 300ms;
   41.8%{scale: 1 0.2;}
   42.8%{scale: 1;}
 
+  34%{scale: 1; translate: -7px -2px;}
+  36%{scale: 1.05; translate: 3px -2px;}
+
+  45%{scale: 1.05; translate: 3px -2px;}
+  47%{scale: 1; translate: 0%;}
+
   50%{translate: 0%;}
   53%{translate: -22px 13px;}
+  56%{translate: -22px 8px;}
+  58%{translate: -22px 8px;}
+  60%{translate: -22px 13px;}
   54.8%{    
     scale: 1;
     animation-timing-function: step-end;}
   57.8%{scale: 1 0.2;}
   58.8%{scale: 1;}
-  62%{translate: -22px 13px;scale: 1;}
-  65%{translate: 20px -12px; scale: 1.2}
+  63%{translate: -22px 13px;scale: 1;}
+  66%{translate: 20px -12px; scale: 1.2}
   67.8%{    
     scale: 1.2;
     animation-timing-function: step-end;}
@@ -1034,7 +1078,9 @@ transition: 300ms;
   gap: 30px;
 }
 
-.news-card {
+.news-list ul{height: fit-content;}
+
+.news-card{
   background-color: var(--bg-oxford-blue-alpha-90);
   box-shadow: var(--shadow);
   border: 1px solid hsla(261, 100%, 75%, 0.5);
@@ -1043,6 +1089,7 @@ transition: 300ms;
 .news-card .card-content {
   position: relative;
   padding: 30px;
+  height: 100%;
 }
 
 .card-tag {
