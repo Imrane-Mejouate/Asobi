@@ -758,9 +758,9 @@ transition: 300ms;
   --emo-shadow: hsl(0, 74%, 48%);
   --huh: hsl(0, 74%, 48%);
   --emo-shadow-broken: hsla(0, 74%, 48%, 0.4);
-  /* --emo-eyes: hsl(0, 100%, 50%); */
-  --emo-eyes: url(../../images/Sharingan.png);
-  --bright: brightness(1.3);
+  --emo-eyes: hsl(0, 100%, 50%);
+  /* --emo-eyes: url(../../images/Sharingan.png);
+  --bright: brightness(1.3); */
 }
 
 
@@ -903,6 +903,8 @@ transition: 300ms;
   animation: right-eye 20s ease-in-out infinite 5.02s;
 }
 
+
+
 @keyframes left-eye {
 
   1%{    
@@ -944,7 +946,7 @@ transition: 300ms;
 
   50%{translate: 0%; rotate: 0deg;}
   53%{translate: -18px 15px;}
-  56%{translate: -16px 7px;}
+  55%{translate: -16px 7px;}
   58%{translate: -16px 7px;}
   60%{translate: -18px 15px;}
   56%{    
@@ -1011,7 +1013,7 @@ transition: 300ms;
 
   50%{translate: 0%;}
   53%{translate: -22px 13px;}
-  56%{translate: -22px 8px;}
+  55%{translate: -22px 8px;}
   58%{translate: -22px 8px;}
   60%{translate: -22px 13px;}
   54.8%{    
@@ -1035,6 +1037,8 @@ transition: 300ms;
   81.8%{scale: 1 0.2;}
   82.8%{scale: 1;}
 }
+
+
 
 .eye-container{
   height: 100%;
