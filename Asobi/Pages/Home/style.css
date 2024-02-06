@@ -763,6 +763,7 @@ transition: 300ms;
   --bright: brightness(1.3); */
 }
 
+.EMO-word{color: var(--emo-eyes);}
 
 .help-bar{
   left: -210px;
