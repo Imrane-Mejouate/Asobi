@@ -728,42 +728,45 @@ transition: 300ms;
 
 :root:has(#blue:checked){
   --emo-shadow: hsl(214, 100%, 50%);
-  --huh: hsl(214, 100%, 50%);
+  --huh: hsl(180, 100%, 50%);
   --emo-shadow-broken: hsla(214, 100%, 50%, 0.4);
-  --emo-eyes: #00fffe;
+  --emo-eyes: hsl(180, 100%, 50%);
 }
 
 :root:has(#purple:checked){
   --emo-shadow: hsl(308, 69%, 46%);
-  --huh: hsl(308, 69%, 46%);
+  --huh: hsl(308, 100%, 50%);
   --emo-shadow-broken: hsla(308, 69%, 46%, 0.4);
   --emo-eyes: hsl(308, 100%, 50%);
 }
 
 :root:has(#yellow:checked){
   --emo-shadow: hsl(48, 100%, 50%);
-  --huh: hsl(48, 100%, 50%);
+  --huh: hsl(56, 100%, 50%);
   --emo-shadow-broken: hsla(48, 100%, 50%, 0.4);
   --emo-eyes: hsl(56, 100%, 50%);
 }
 
 :root:has(#green:checked){
   --emo-shadow: hsl(113, 63%, 48%);
-  --huh: hsl(113, 63%, 48%);
+  --huh: hsl(113, 76%, 50%);
   --emo-shadow-broken: hsla(113, 63%, 48%, 0.4);
   --emo-eyes: hsl(113, 76%, 50%);
 }
 
 :root:has(#red:checked){
   --emo-shadow: hsl(0, 74%, 48%);
-  --huh: hsl(0, 74%, 48%);
+  --huh: hsl(0, 100%, 50%);
   --emo-shadow-broken: hsla(0, 74%, 48%, 0.4);
   --emo-eyes: hsl(0, 100%, 50%);
   /* --emo-eyes: url(../../images/Sharingan.png);
   --bright: brightness(1.3); */
 }
 
-.EMO-word{color: var(--emo-eyes);}
+.EMO-word{
+  color: var(--emo-eyes);
+  filter: brightness(0.9);
+}
 
 .help-bar{
   left: -210px;
