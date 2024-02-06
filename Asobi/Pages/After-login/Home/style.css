@@ -728,34 +728,42 @@ transition: 300ms;
 
 :root:has(#blue:checked){
   --emo-shadow: hsl(214, 100%, 50%);
+  --huh: hsl(214, 100%, 50%);
   --emo-shadow-broken: hsla(214, 100%, 50%, 0.4);
   --emo-eyes: #00fffe;
 }
 
 :root:has(#purple:checked){
   --emo-shadow: hsl(308, 69%, 46%);
+  --huh: hsl(308, 69%, 46%);
   --emo-shadow-broken: hsla(308, 69%, 46%, 0.4);
   --emo-eyes: hsl(308, 100%, 50%);
 }
 
 :root:has(#yellow:checked){
   --emo-shadow: hsl(48, 100%, 50%);
+  --huh: hsl(48, 100%, 50%);
   --emo-shadow-broken: hsla(48, 100%, 50%, 0.4);
   --emo-eyes: hsl(56, 100%, 50%);
 }
 
 :root:has(#green:checked){
   --emo-shadow: hsl(113, 63%, 48%);
+  --huh: hsl(113, 63%, 48%);
   --emo-shadow-broken: hsla(113, 63%, 48%, 0.4);
   --emo-eyes: hsl(113, 76%, 50%);
 }
 
 :root:has(#red:checked){
   --emo-shadow: hsl(0, 74%, 48%);
+  --huh: hsl(0, 74%, 48%);
   --emo-shadow-broken: hsla(0, 74%, 48%, 0.4);
   --emo-eyes: hsl(0, 100%, 50%);
+  /* --emo-eyes: url(../../images/Sharingan.png);
+  --bright: brightness(1.3); */
 }
 
+.EMO-word{color: var(--emo-eyes);}
 
 .help-bar{
   left: -210px;
@@ -876,7 +884,9 @@ transition: 300ms;
   width: 25px;
   height: 25px;
   border-radius: 7px;
-  background-color: var(--emo-eyes);
+  background: var(--emo-eyes);
+  background-size: cover;
+  filter: var(--bright);
   box-shadow: inset -2px 5px 8px var(--emo-eyes-shadow);
   position: absolute;
   z-index: 2;
@@ -893,6 +903,8 @@ transition: 300ms;
   right: 37px;
   animation: right-eye 20s ease-in-out infinite 5.02s;
 }
+
+
 
 @keyframes left-eye {
 
@@ -935,7 +947,7 @@ transition: 300ms;
 
   50%{translate: 0%; rotate: 0deg;}
   53%{translate: -18px 15px;}
-  56%{translate: -16px 7px;}
+  55%{translate: -16px 7px;}
   58%{translate: -16px 7px;}
   60%{translate: -18px 15px;}
   56%{    
@@ -1002,7 +1014,7 @@ transition: 300ms;
 
   50%{translate: 0%;}
   53%{translate: -22px 13px;}
-  56%{translate: -22px 8px;}
+  55%{translate: -22px 8px;}
   58%{translate: -22px 8px;}
   60%{translate: -22px 13px;}
   54.8%{    
@@ -1026,6 +1038,8 @@ transition: 300ms;
   81.8%{scale: 1 0.2;}
   82.8%{scale: 1;}
 }
+
+
 
 .eye-container{
   height: 100%;
@@ -1136,7 +1150,7 @@ transition: 300ms;
 .huh,.huh2{
   position: absolute;
   top: 30%;
-  color: var(--emo-eyes);
+  color: var(--huh);
   text-shadow: inset -2px 5px 8px var(--emo-eyes-shadow);
   opacity: 0;
 }
@@ -1158,6 +1172,7 @@ transition: 300ms;
   0%{opacity: 1;translate: 6px -14px;}
   100%{top: 35%; opacity: 0;}
 }
+
 
 
 
