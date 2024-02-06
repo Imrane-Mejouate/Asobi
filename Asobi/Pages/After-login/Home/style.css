@@ -766,6 +766,7 @@ transition: 300ms;
 .EMO-word{
   color: var(--emo-eyes);
   filter: brightness(0.9);
+  transition: 400ms;
 }
 
 .help-bar{
