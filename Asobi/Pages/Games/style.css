@@ -460,7 +460,7 @@ article{
 .search-bar::placeholder{color: hsl(0, 0%, 79%);}
 
 .search{
-  border-radius: 50px;
+  border-radius: 15px;
   height: 60px;
   width: 60px;
   transition: 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -510,6 +510,7 @@ article{
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  gap: 5px;
 }
 
 .slider::-webkit-scrollbar{display: none;}
