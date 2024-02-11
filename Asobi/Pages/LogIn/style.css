@@ -132,9 +132,6 @@
     font-size: var(--fontSize-4);
     font-weight: var(--weight-regular);
     overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   
   ::-webkit-scrollbar { width: 4px; }
@@ -146,9 +143,8 @@
 
   body {
 	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .log-btn{
@@ -232,7 +228,7 @@
 }
 .big-login-list {
 	text-align: center;
-	transition: all 1.5s cubic-bezier(0.7, -0.5, 0.3, 1.8);
+	transition: all 1.2s cubic-bezier(0.175, 0.885, 0.32, 1);
 	transform-style: preserve-3d;
   flex-shrink: inherit;
 }
@@ -251,6 +247,7 @@
 	left: 0;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+  margin: 100px auto;
 }
 .front {
 	height: 100%;
@@ -265,6 +262,7 @@
 	position: absolute;
 	border-radius: 40px;
 	height: 450px;
+  margin-top: 10px;
 }
 .content {
 	padding-top: 25%;
@@ -283,7 +281,7 @@
 .signup-div{
   padding: 20px 35px 35px 35px;
   background-color: hsla(240, 63%, 13%, 0.7);
-  height: 550px;
+  height: 650px;
   border-radius: 40px;
   box-shadow: 13px 13px 20px hsla(253, 93%, 29%, 0.6),-13px -13px 20px hsla(253, 100%, 60%, 0.4);
 }
@@ -317,6 +315,7 @@
   grid-template-columns: auto 1fr;
   margin-bottom: 30px;
   border-radius: 25px;
+  border: 2px solid hsla(267, 97%, 65%, 0.6);
   box-shadow: inset 8px 8px 8px hsla(253, 93%, 29%, 0.6), inset -8px -8px 8px hsla(253, 100%, 60%, 0.4);
   padding: 20px 0;
   overflow: hidden;
@@ -328,8 +327,9 @@
   grid-template-columns: auto 1fr;
   margin-bottom: 20px;
   border-radius: 25px;
+  border: 2px solid hsla(267, 97%, 65%, 0.6);
   box-shadow: inset 8px 8px 8px hsla(253, 93%, 29%, 0.6), inset -8px -8px 8px hsla(253, 100%, 60%, 0.4);
-  padding: 12px 0;
+  padding: 20px 0;
   overflow: hidden;
 }
 
@@ -337,7 +337,7 @@
   height: 22px;
   margin: 0 10px -3px 25px;
   place-self: center;
-  color: hsla(267, 100%, 63%, 1);
+  color: #fff;
 }
 
 .signin-button{
@@ -381,7 +381,7 @@
 
 .user-input,.email-input,.password-input{background: transparent;max-width: 70%;}
 
-input::placeholder{color: hsla(267, 100%, 63%, 1); font-weight: var(--weight-semiBold); font-size: 1.5rem;}
+input::placeholder{color: #a358ff; font-weight: var(--weight-semiBold); font-size: 1.5rem;}
 
 .b-log{font-weight: var(--weight-semiBold);}
 
