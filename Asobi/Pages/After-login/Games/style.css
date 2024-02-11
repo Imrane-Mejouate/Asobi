@@ -473,6 +473,8 @@ article{
   cursor: pointer;
 }
 
+.search-bar::-webkit-search-cancel-button{-webkit-appearance: none;}
+
 
 /* 
 #SWIPER SLIDE 
