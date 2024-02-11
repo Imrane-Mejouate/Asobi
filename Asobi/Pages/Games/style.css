@@ -439,11 +439,7 @@ article{
   grid-template-rows: auto 600px repeat(4,auto);
 }
 
-.srch-check:not(:checked) ~ .search .search-bar{transition: 400ms;}
-
 .search-bar{
-  transition: 400ms 100ms;
-  transform-origin: left;
   color: #fff;
   outline: none;
   width: 90%;
