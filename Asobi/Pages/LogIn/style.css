@@ -247,7 +247,7 @@
 	left: 0;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-  margin: 100px auto;
+  margin: 150px auto;
 }
 .front {
 	height: 100%;
@@ -276,6 +276,7 @@
   height: 450px;
   border-radius: 40px;
   box-shadow: 13px 13px 20px hsla(253, 93%, 29%, 0.6),-13px -13px 20px hsla(253, 100%, 60%, 0.4);
+  border: hsl(267, 100%, 63%,0.7) 2px solid;
 }
 
 .signup-div{
@@ -284,6 +285,7 @@
   height: 650px;
   border-radius: 40px;
   box-shadow: 13px 13px 20px hsla(253, 93%, 29%, 0.6),-13px -13px 20px hsla(253, 100%, 60%, 0.4);
+  border: hsl(267, 100%, 63%,0.7) 2px solid;
 }
 
 .log{
