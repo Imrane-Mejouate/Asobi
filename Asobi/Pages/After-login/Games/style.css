@@ -411,7 +411,7 @@ transition: 300ms;
 
 
 /*-----------------------------------*\
-#HERO
+  #HERO
 \*-----------------------------------*/
 
 .hero {
@@ -426,55 +426,54 @@ transition: 300ms;
 .hero-title { margin-block: 20px 25px; }
 
 main{
-  overflow: hidden;
-  border-bottom: 1px solid #fff;
-  box-shadow: -2px 7px 10px var(--bg-purple),-2px 7px 10px var(--border-purple-alpha-30);
+overflow: hidden;
+border-bottom: 1px solid #fff;
+box-shadow: -2px 7px 10px var(--bg-purple),-2px 7px 10px var(--border-purple-alpha-30);
 }
 
 article{
-  /* margin-left: 5rem; */
-  padding: 2rem 2rem calc(2rem - 10px) 2rem;
-  padding-top: 100px;
-  background-color: hsla(246, 53%, 11%, 0.7);
-  display: grid;
-  grid-template-rows: auto 600px repeat(4,auto);
+/* margin-left: 5rem; */
+padding: 2rem 2rem calc(2rem - 10px) 2rem;
+padding-top: 100px;
+background-color: hsla(246, 53%, 11%, 0.7);
+display: grid;
+grid-template-rows: auto 600px repeat(4,auto);
 }
 
 .search-bar{
-  color: #fff;
-  outline: none;
-  width: 90%;
+color: #fff;
+outline: none;
+width: 90%;
 }
 
 .search-bar::placeholder{color: hsl(0, 0%, 100%,0.5);}
 
-.src{align-self: end;margin-left: 5vw;}
+.src{align-self: end;margin-left: 5vw; margin-bottom: 1rem;}
 
 .search{
-  border-radius:24px;
-  height: 40px;
-  width: 230px;
-  transition: 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  place-items: center;
-  padding: 0 10px;
-  gap: 5px;
-  font-size: 15px;
-  background: hsl(226, 100%, 63%);
-  display: grid;
-  grid-template-columns: auto 1fr;
-  border: 2px hsl(226, 100%, 74%,0.5) solid;
+border-radius:24px;
+height: 40px;
+width: 230px;
+transition: 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+place-items: center;
+padding: 0 10px;
+gap: 5px;
+font-size: 15px;
+background: hsl(226, 100%, 63%);
+display: grid;
+grid-template-columns: auto 1fr;
+border: 2px hsl(226, 100%, 74%,0.5) solid;
 }
 
 .srch-icon{
-  place-self: center;
-  display: grid;
-  place-items: center;
-  font-size: 15px;
-  cursor: pointer;
+place-self: center;
+display: grid;
+place-items: center;
+font-size: 15px;
+cursor: pointer;
 }
 
 .search-bar::-webkit-search-cancel-button{-webkit-appearance: none;}
-
 
 /* 
 #SWIPER SLIDE 
@@ -487,6 +486,7 @@ display: block;
 display: grid;
 place-items: center;
 padding-top: 10px;
+position: relative;
 }
 
 .slider-wrapper{
@@ -1239,6 +1239,8 @@ to{stroke-dashoffset: 0;}
 .slider-container{display: none;}
 
 .big-slider-container{display: flex;}
+
+.src{margin-bottom: 0;}
 
 article{
   grid-template-rows: 65px repeat(5,auto);
