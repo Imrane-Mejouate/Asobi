@@ -909,7 +909,6 @@ transition: 300ms;
 }
 
 
-
 @keyframes left-eye {
 
   1%{    
@@ -1042,7 +1041,6 @@ transition: 300ms;
   81.8%{scale: 1 0.2;}
   82.8%{scale: 1;}
 }
-
 
 
 .eye-container{
@@ -1524,6 +1522,7 @@ transition: 300ms;
   transition: var(--transition-1);
   z-index: 4;
   opacity: 0;
+  scale: 0;
   animation: visi forwards;
   animation-timeline: view(30vh);
   box-shadow: inset -5px 5px 5px hsla(0, 0%, 100%, 0.3),inset 5px -5px 5px hsla(0, 0%, 0%, 0.3);
@@ -1539,6 +1538,7 @@ transition: 300ms;
   10%,100%{
     opacity: 1;
     transform: translateY(-20px);
+    scale: 1;
   }
 }
 
@@ -1616,7 +1616,6 @@ transition: 300ms;
 }
 
 
-
 /**
  * responsive for large than 768px screen
  */
@@ -1684,42 +1683,6 @@ transition: 300ms;
    .games-grid{grid-template-columns: repeat(4,1fr);}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /**
