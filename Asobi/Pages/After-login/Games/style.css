@@ -1005,7 +1005,7 @@ background-color: var(--bg-oxford-blue-alpha-80);
   place-items: center;
   font-size: 2.1rem;
   transition: var(--transition-1);
-  z-index: 4;
+  z-index: 100;
   opacity: 0;
   scale: 0;
   animation: visi forwards;
