@@ -455,7 +455,7 @@ article{
   width: 230px;
   transition: 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   place-items: center;
-  padding: 0 1%;
+  padding: 0 10px;
   gap: 5px;
   font-size: 15px;
   background: hsl(226, 100%, 63%);
