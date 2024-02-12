@@ -447,7 +447,7 @@ article{
 
 .search-bar::placeholder{color: hsl(0, 0%, 100%,0.5);}
 
-.src{align-self: end;margin-left: 5vw;}
+.src{align-self: end;margin-left: 5vw; margin-bottom: 1rem;}
 
 .search{
   border-radius:24px;
@@ -485,6 +485,7 @@ article{
   display: grid;
   place-items: center;
   padding-top: 10px;
+  position: relative;
 }
 
 .slider-wrapper{
@@ -1237,6 +1238,8 @@ article{
   .slider-container{display: none;}
 
   .big-slider-container{display: flex;}
+
+  .src{margin-bottom: 0;}
 
   article{
     grid-template-rows: 65px repeat(5,auto);
